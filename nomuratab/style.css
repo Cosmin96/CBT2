@@ -620,7 +620,7 @@ background-size: cover;
   min-height:470  px;
   margin-bottom: 30px;
   width:300px;
-  height:175px;
+  height:130px;
 
   -webkit-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
   -moz-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
@@ -713,3 +713,128 @@ background-size: cover;
 
 
 
+
+.card4-member {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card4-member .content {
+  padding: 25px;
+}
+.card4-member > img {
+  background: none repeat scroll 0 0 transparent;
+  height: auto;
+  width: 120px;
+  margin: 0 auto;
+}
+.card4-white {
+  background: #FFFFFF;
+}
+
+.card4-plain {
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+}
+.card4-plain .image-header {
+  border-radius: 4px;
+}
+
+.card4 {
+  background: #fff;
+  box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23), 0 20px 25px 0px rgba(0, 0, 0, 0.12), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  min-height:470  px;
+  margin-bottom: 30px;
+  width:300px;
+  height:120px;
+
+  -webkit-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+  -moz-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+  -o-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+  -ms-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+  transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+}
+.card4:not(.card4-plain):not(.card4-price):hover {
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+  box-shadow: 0 26px 50px -10px rgba(0, 0, 0, 0.38), 0 10px 20px 0px rgba(0, 0, 0, 0.2), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
+}
+.card4 .subtitle-black {
+  color: #141414;
+}
+.card4 a {
+  opacity: .85;
+}
+.card4:hover .header {
+  opacity: 1;
+}
+.card4 h2 {
+  margin-top: 0;
+}
+.card4 img {
+  max-width: 100%;
+}
+.card4 .header img {
+  border-radius: 4px;
+}
+.card4 .image-header,
+.card4 .header img {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+.card4 .image-header.image-full,
+.card4 .header img.image-full {
+  border-radius: 4px;
+}
+.card4 .row .image-header,
+.card4 .row .header img {
+  width: 100%;
+  border-radius: 4px;
+}
+.card4 .btn {
+  margin-top: 15px;
+}
+.card4 > img {
+  border-radius: 4px;
+}
+.card4 .title {
+  margin-bottom: 5px;
+  color: #333333;
+}
+.card4 .description {
+  font-size: 13px;
+}
+
+.card4-member {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.card4-member .content {
+  padding: 25px;
+}
+.card4-member > img {
+  background: none repeat scroll 0 0 transparent;
+  height: auto;
+
+  width: 120px;
+  margin: 0 auto;
+}
+
+.card4-white {
+  background: #FFFFFF;
+}
+
+.card4-plain {
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+}
+.card4-plain .image-header {
+  border-radius: 4px;
+}
