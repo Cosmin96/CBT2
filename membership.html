@@ -31,7 +31,28 @@
         interval: 3000
     })
     </script>
-  
+  <style>
+a.darken {
+    display: inline-block;
+    background: transparent;
+    padding: 0;
+}
+
+a.darken img {
+    display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+
+a.darken:hover img {
+    opacity: 0.7;
+            
+}
+  </style>
 </head>
 <body>
 
@@ -46,7 +67,7 @@
                 <div class="mbr-table-cell">
 
                     <div class="navbar-brand">
-                        <a href="index.html" class="navbar-logo"><img src="assets/images/logo-648x128-26.png" alt="Mobirise"></a>
+                        <a href="index.html" class="navbar-logo darken"><img src="assets/images/logo-648x128-26.png" alt="Mobirise"></a>
                         
                     </div>
 
@@ -425,6 +446,7 @@ $(function() {
   }
 });
   </script>
+
   <!--
   <input name="animation" type="hidden">
    <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon"></i></a></div>
