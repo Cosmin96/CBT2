@@ -25,12 +25,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="nomuratab/style.css" type="text/css">
  <link href="nomuratab/bootstrap.min.css" rel="stylesheet">
-
+ <!--
    <script>
     $('.carousel').carousel({
         interval: 3000
     })
-    </script>
+    </script>-->
  <style>
 html, body {
     max-width: 100%;
@@ -61,7 +61,49 @@ a.darken:hover img {
 </head>
 <body>
 
- 
+ <style>.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('assets/images/videoframe.png') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
+</style>
+
 <style>
 hr { 
     height: 1px;
@@ -189,20 +231,8 @@ hr {
     <div class="mbr-arrow mbr-arrow-floating" aria-hidden="true"><a href="#aboutusdiv"><i class="mbr-arrow-icon"></i></a></div>
 
 </section>
-
-<section class="mbr-section mbr-section__container article" id="aboutus" style="background-color: rgb(14,148,255); padding-top: 20px; padding-bottom: 20px; text-align: center">
-    <div class="container">
-        <div class="row">
-                      <div id="aboutusdiv" style="position:absolute; height:1px; top:-70px;">
-            </div>
-            <div class="col-xs-12">
-                <h3 class="mbr-section-title display-2" style="color: #ffffff; font-size: 300%;">About us</h3>
-                
-            </div>
-        </div>
-    </div>
-</section>
 -->
+
 
 <section class="mbr-slider mbr-section mbr-section__container carousel slide mbr-section-nopadding" data-ride="carousel" data-keyboard="false" data-wrap="true" data-pause="false" data-interval="10000" id="slider-2f">
     <div>
@@ -212,7 +242,7 @@ hr {
                     <li data-app-prevent-settings="" data-target="#slider-2f" data-slide-to="0" class="active"></li><li data-app-prevent-settings="" data-target="#slider-2f" data-slide-to="1"></li><li data-app-prevent-settings="" data-target="#slider-2f" class="" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
-                    <div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full active" data-bg-video-slide="https://www.youtube.com/watch?v=dyp2mLYhRkw">
+                    <div class="mbr-section mbr-section-hero carousel-item dark center mbr-section-full active">
                         <div class="mbr-table-cell">
                             <div class="mbr-overlay"></div>
                             <div class="container-slide container">
@@ -220,9 +250,11 @@ hr {
                                 <div class="row">
                                     <div class="col-md-8 col-md-offset-2 text-xs-center">
                                         <h2 class="mbr-section-title display-1">Welcome to UCL Centre for Blockchain Technologies</h2>
-                                        
-
-                                        
+                                        <div class="fullscreen-bg">
+                                          <video loop muted autoplay poster="assets/images/videoframe.jpg" class="fullscreen-bg__video">
+                                            <source src="assets/video/Countdown.mp4" type="video/mp4">
+                                          </video>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -252,7 +284,7 @@ hr {
                                         <h2 class="mbr-section-title display-1">Check our latest news</h2>
                                         
 
-                                        <div class="mbr-section-btn"> <a class="btn btn-lg btn-white btn-white-outline" href="https://mobirise.com">News</a></div>
+                                        <div class="mbr-section-btn"> <a class="btn btn-lg btn-white btn-white-outline" href="index.html#newsupdatesdiv">News</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -268,6 +300,19 @@ hr {
                     <span class="icon-next" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section mbr-section__container article" id="aboutus" style="background-color: rgb(14,148,255); padding-top: 20px; padding-bottom: 20px; text-align: center">
+    <div class="container">
+        <div class="row">
+                      <div id="aboutusdiv" style="position:absolute; height:1px; top:-70px;">
+            </div>
+            <div class="col-xs-12">
+                <h3 class="mbr-section-title display-2" style="color: #ffffff; font-size: 300%;">About us</h3>
+                
             </div>
         </div>
     </div>
@@ -3337,7 +3382,6 @@ In order to ensure CBT expands. I continue collaborate with the Creative Communi
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/smooth-scroll/SmoothScroll.js"></script>
   <script src="assets/viewportChecker/jquery.viewportchecker.js"></script>
-
   <script src="assets/dropdown/js/script.min.js"></script>
   <script src="assets/touchSwipe/jquery.touchSwipe.min.js"></script>
   <script src="assets/jarallax/jarallax.js"></script>
@@ -3345,6 +3389,10 @@ In order to ensure CBT expands. I continue collaborate with the Creative Communi
   <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js"></script>
   <script src="assets/theme/js/script.js"></script>
+    <script src="assets/mobirise-gallery/player.min.js"></script>
+  <script src="assets/mobirise-gallery/script.js"></script>
+   <script src="assets/formoid/formoid.min.js"></script>
+
 
 
   <script>
