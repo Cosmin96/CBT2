@@ -838,3 +838,124 @@ background-size: cover;
 .card4-plain .image-header {
   border-radius: 4px;
 }
+
+.cardvenn-member {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cardvenn-member .content {
+  padding: 25px;
+}
+.cardvenn-member > img {
+  background: none repeat scroll 0 0 transparent;
+  height: auto;
+  width: 120px;
+  margin: 0 auto;
+}
+.cardvenn-white {
+  background: #FFFFFF;
+}
+
+.cardvenn-plain {
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+}
+.cardvenn-plain .image-header {
+  border-radius: 4px;
+}
+
+.cardvenn {
+  background: #fff;
+  box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23), 0 20px 25px 0px rgba(0, 0, 0, 0.12), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  /*^value was 470 */
+  margin-bottom: 10px;
+  -webkit-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+  -moz-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+  -o-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+  -ms-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+  transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+}
+.cardvenn:not(.cardvenn-plain):not(.cardvenn-price):hover {
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+  box-shadow: 0 26px 50px -10px rgba(0, 0, 0, 0.38), 0 10px 20px 0px rgba(0, 0, 0, 0.2), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
+}
+.cardvenn .subtitle-black {
+  color: #141414;
+}
+.cardvenn a {
+  opacity: .85;
+}
+.cardvenn:hover .header {
+  opacity: 1;
+}
+.cardvenn h2 {
+  margin-top: 0;
+}
+.cardvenn img {
+  max-width: 100%;
+}
+.cardvenn .header img {
+  border-radius: 4px;
+}
+.cardvenn .image-header,
+.cardvenn .header img {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+.cardvenn .image-header.image-full,
+.cardvenn .header img.image-full {
+  border-radius: 4px;
+}
+.cardvenn .row .image-header,
+.cardvenn .row .header img {
+  width: 100%;
+  border-radius: 4px;
+}
+.cardvenn .btn {
+  margin-top: 15px;
+}
+.cardvenn > img {
+  border-radius: 4px;
+}
+.cardvenn .title {
+  margin-bottom: 5px;
+  color: #333333;
+}
+.cardvenn .description {
+  font-size: 13px;
+}
+
+.cardvenn-member {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cardvenn-member .content {
+  padding: 25px;
+}
+.cardvenn-member > img {
+  background: none repeat scroll 0 0 transparent;
+  height: auto;
+  width: 120px;
+  margin: 0 auto;
+}
+
+.cardvenn-white {
+  background: #FFFFFF;
+}
+
+.cardvenn-plain {
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+}
+.cardvenn-plain .image-header {
+  border-radius: 4px;
+}
