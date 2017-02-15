@@ -792,9 +792,6 @@ This will enable scalable infrastructure fabrics, industry-wide solutions and st
               </div>
           
 
-            <div id="placeholder" style="color:white;margin-top:5%;margin-right:5%;margin-left:5%;font-size:50px;">
-             <p align="center">Check the diagram on the left</p>
-            </div>
           </div>
 </div>
          
@@ -4018,14 +4015,14 @@ $("#innovative1").hide();
 $("#innovative2").hide();
 $("#innovative3").hide();
 
-$("#innovation1").on('mouseover', function (){$("#placeholder").fadeOut();setTimeout(function(){$("#innovative1").fadeIn();}, 300);});
-$("#innovation2").on('mouseover', function (){$("#placeholder").fadeOut();setTimeout(function(){$("#innovative2").fadeIn();}, 300);});
-$("#innovation3").on('mouseover', function (){$("#placeholder").fadeOut();setTimeout(function(){$("#innovative3").fadeIn();}, 300);});
+$("#innovation1").on('mouseover', function (){$("#innovative1").fadeIn();});
+$("#innovation2").on('mouseover', function (){$("#innovative2").fadeIn();});
+$("#innovation3").on('mouseover', function (){$("#innovative3").fadeIn();});
 
 
-$("#innovation1").on('mouseleave', function (){$("#innovative1").fadeOut(200);setTimeout(function(){$("#placeholder").fadeIn();}, 200); });
-$("#innovation2").on('mouseleave', function (){$("#innovative2").fadeOut(200);setTimeout(function(){$("#placeholder").fadeIn();}, 200); });
-$("#innovation3").on('mouseleave', function (){$("#innovative3").fadeOut(200);setTimeout(function(){$("#placeholder").fadeIn();}, 200); });
+$("#innovation1").on('mouseleave', function (){$("#innovative1").fadeOut(200);});
+$("#innovation2").on('mouseleave', function (){$("#innovative2").fadeOut(200);});
+$("#innovation3").on('mouseleave', function (){$("#innovative3").fadeOut(200);});
 
 </script>
 
