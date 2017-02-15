@@ -181,6 +181,21 @@ a.darken img {
 a.darken:hover img {
     opacity: 0.4;           
 }
+
+             
+a.innovation:hover{
+  background: #2EB2FF;
+  opacity:0.2;
+  
+}
+
+.box{
+  width:500px;
+  height:300px;
+  background:#2EB2FF;
+  border-radius:50px;
+  margin-top:10%;
+}
   </style>
 
  <style>.fullscreen-bg {
@@ -233,7 +248,7 @@ hr {
     color: blue;
     width:50px;
 
-    background-color: #009CDE;
+    background-color: #2EB2FF;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     margin-left: auto;
@@ -727,8 +742,67 @@ This will enable scalable infrastructure fabrics, industry-wide solutions and st
 
     <div class="container">
         <div class="row">
-            <p align="center">
-            <img src="assets/images/slide8.png" width="100%" height="80%">
+            
+          <p align="left"><h1><b>An Innovative Platform</b></h1></p>
+          <p align="left"><h2>Applying an integrated approach on the implementation of Blockchain</h2></p><br><br>
+
+          <div class="container" >
+
+          <div class="col-lg-6">
+       
+             <a id="innovation1" class="innovation" style="position:absolute; top:41px; left:213px;width:135px;height:135px; border-radius:70px;border:none;"></a>
+             <a id="innovation2" class="innovation" style="position:absolute; top:271px; left:33px;width:135px;height:135px; border-radius:70px;border:none;"></a> 
+             <a id="innovation3" class="innovation" style="position:absolute; top:271px; right:30px;width:135px;height:135px; border-radius:70px;border:none;"></a>
+              <p align="center"><img src="assets/images/slide8.png" width="100%" height="100%"></p>
+
+          </div>
+
+            <div class="col-lg-6">
+              <div class="box">
+                
+
+
+              <div id="innovative1" style="color:white;padding-top:7%;margin-right:5%;margin-left:5%;">
+              
+                  &bull; <b>World’s largest</b> student Blockchain society<br>
+                  &bull; Blockchain Start-up Observatory<br>
+                  &bull; <b>Fostering open dialogue and sharing</b> of platforms, resources and ideas amongst the Centre’s industry members.<br>
+                  &bull; <b>Informing and teaching the student community</b> about the Blockchain technology, providing it with a point of access to the opportunities in the Blockchain sector.<br>
+                  &bull; <b>Accelerating through investments</b> and expertise the growth and development of students’ ideas and of Blockchain start-ups.<br>
+              </div>
+
+<br>
+          
+              <div id="innovative2" style="color:white;margin-top:5%;margin-right:5%;margin-left:5%;">
+                
+                      Supported by 8 departments and over 30 scientists.<br>
+                      Focus on: <br>
+                      &bull; <b>Founding of a cultural forum and interdisciplinary pole of research</b> to promote a safe and organic development and adoption of Blockchain platforms.<br>
+                      &bull; <b>Scoping the impact of Blockchain technologies</b> on the socio-economic system<br>                
+              </div>
+            
+<br>
+
+              <div id="innovative3" style="color:white;margin-top:5%;margin-right:5%;margin-left:5%;">
+                
+                      &bull; <b>Providing consultancy services</b> to industry members<br>
+                      &bull; <b>Dedicated knowledge-transfer activities</b> and in-house cutting-edge solutions<br>
+                      &bull; Direct support to our members to design, implement and test different Blockchain-based solutions
+            
+              </div>
+          
+
+            <div id="placeholder" style="color:white;margin-top:5%;margin-right:5%;margin-left:5%;font-size:50px;">
+             <p align="center">Check the diagram on the left</p>
+            </div>
+          </div>
+</div>
+         
+
+        </div>
+            
+          </div>
+          <p align="centre">
             <img src="assets/images/slide9.png" width="100%" height="80%">
             <img src="assets/images/slide12.png" width="100%" height="80%">
                 
@@ -3935,6 +4009,23 @@ $("#mida").on('mouseleave', function (){$("#venn1").slideUp();$("#venn3").slideU
 $("#midb").on('mouseleave', function (){$("#venn2").slideUp();$("#venn3").slideUp();});
 $("#midc").on('mouseleave', function (){$("#venn1").slideUp();$("#venn2").slideUp();});
 $("#inner").on('mouseleave', function (){$("#venn4").slideUp();});
+
+</script>
+
+<!--Innovation Slide Script-->
+<script>
+$("#innovative1").hide();
+$("#innovative2").hide();
+$("#innovative3").hide();
+
+$("#innovation1").on('mouseover', function (){$("#placeholder").fadeOut();setTimeout(function(){$("#innovative1").fadeIn();}, 300);});
+$("#innovation2").on('mouseover', function (){$("#placeholder").fadeOut();setTimeout(function(){$("#innovative2").fadeIn();}, 300);});
+$("#innovation3").on('mouseover', function (){$("#placeholder").fadeOut();setTimeout(function(){$("#innovative3").fadeIn();}, 300);});
+
+
+$("#innovation1").on('mouseleave', function (){$("#innovative1").fadeOut(200);setTimeout(function(){$("#placeholder").fadeIn();}, 200); });
+$("#innovation2").on('mouseleave', function (){$("#innovative2").fadeOut(200);setTimeout(function(){$("#placeholder").fadeIn();}, 200); });
+$("#innovation3").on('mouseleave', function (){$("#innovative3").fadeOut(200);setTimeout(function(){$("#placeholder").fadeIn();}, 200); });
 
 </script>
 
